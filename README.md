@@ -1,2 +1,2 @@
-# Silicon Arena Frontend Internship tasks
-Mini E-Commerce pages using Reactjs framework
+# Silicon Arena Frontend Internship Tasks
+Mini E-Commerce pages using React framework

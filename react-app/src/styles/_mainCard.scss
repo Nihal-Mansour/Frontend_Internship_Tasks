@@ -1,0 +1,74 @@
+.mainCard{
+    background-color: $lightBlueColor;
+}
+
+.cardDetails{
+    display: flex;
+    padding: 25px;
+    padding-bottom: 15px;
+}
+
+.cardInfo{
+    width: 23%;
+    margin-top: auto;
+    padding-left: 50px;
+    font-size: 24px;
+    font-family: $raleWayFont;
+    display: flex;
+    flex-direction: column;
+    #name{
+        font-size: 48px;
+        font-weight: 800;
+    }
+}
+
+.cardImage{
+    img{
+        width: 80%;
+    }
+}
+
+.buyButton{
+    margin: 15px;
+    button{
+        margin-left: 50px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        background-color: $whiteColor;
+        outline: none;
+        border: none;
+        text-align: center;
+        border-radius: 35px;
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: 700;
+        color: $blackColor;
+        font-family: $raleWayFont;
+        width: 260px;
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+   .cardDetails{
+       flex-wrap: wrap-reverse;
+       justify-content: center;
+   }
+   .cardImage{
+    img{
+        width: 100%;
+    }
+    }
+    .cardInfo{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    .buyButton{
+        text-align: center;
+        button{
+            margin-left: 0;
+        }
+    }
+  }
+

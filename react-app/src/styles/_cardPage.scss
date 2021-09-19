@@ -1,0 +1,131 @@
+.cardPage{
+    display: flex;
+    flex-direction: row;
+}
+
+.imageSection{
+    background-color: $blue;
+    width: 60%;
+    padding: 55px;
+    .cardImage{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.cardInformation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details{
+    font-size: 24px;
+    font-family: $raleWayFont;
+    display: flex;
+    flex-direction: column;
+    #name{
+        font-size: 48px;
+        font-weight: 800;
+    }
+}
+
+.buy{
+    button{
+        background-color: $whiteColor;
+        outline: none;
+        border: none;
+        text-align: center;
+        border-radius: 35px;
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: 700;
+        color: $blackColor;
+        font-family: $raleWayFont;
+        width: 260px;
+        height: 70px;
+    }
+}
+
+.infoSection{
+    padding: 25px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    .innerInfoDiv{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding: 25px;
+    }
+    #lookBookDiv{
+        position: relative;
+    }
+    #lookBookImage{
+        width: 100%;
+        height: 120px;
+        margin-top: 42px;
+    }
+    #lookBookText{
+        position: absolute;
+        bottom: 20px;
+        padding: 17px;
+        width: 50px;
+        color: $whiteColor;
+        font-family: $raleWayFont;
+        font-size: 500;
+    }
+}
+
+#productInfoTitle{
+    font-size: 18;
+    font-weight: 500;
+    font-family: $raleWayFont;
+    padding-bottom: 35px;
+}
+
+#description{
+    font-size: 16;
+    font-weight: 400;
+    font-family: $raleWayFont;
+    padding-bottom: 35px;
+}
+
+#detailedCard{
+    display: flex;
+    font-size: 16px;
+    font-family: $raleWayFont;
+    padding: 24px 0 24px 0;
+    border-bottom: solid 2px $lightGrey;
+    #cardTitle{
+        font-weight: 700;
+        padding-right: 30px;
+    }
+    #cardDesc{
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .cardPage{
+        flex-wrap: wrap;
+    }
+    .imageSection,.infoSection{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .cardInformation{
+        flex-wrap: wrap;
+        text-align: center;
+        .buy{
+            width: 100%;
+            button{
+                margin-top: 20px;
+            }
+        }
+        .details{
+            width: 100%;
+        }
+    }
+}

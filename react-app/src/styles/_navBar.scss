@@ -1,0 +1,52 @@
+.navBar{
+    background-color: $whiteColor;
+    padding: 15px;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px $lightWhite;
+    z-index: 1000;
+    //position: sticky;
+}
+
+.ecommerceName{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-family: $raleWayFont;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+.navBarOptions{ 
+    display: flex;
+    flex-direction: row;
+    li{
+        list-style: none; 
+        font-size: 18px;
+        font-family: $raleWayFont;
+        padding: 15px;
+        cursor: pointer;
+    }
+    #shop{
+        color: $lightGrey;
+        font-weight: 400;
+    }
+    #collection{
+        font-weight: 500;
+        color: $blackColor;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .navBar{
+        padding: 10px;
+    }
+    .navBarOptions{ 
+        li{
+            padding: 7px;
+        }
+    }
+}
